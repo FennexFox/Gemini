@@ -21,12 +21,12 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    response = model.generate_content("Explain how AI works")
+    response = model.generate_content("Introduce yourself")
     return response.text
 
 @app.get("/detailer")
 def read_item():
-    response = model.generate_content("Introduce yourself")
+    response = model.generate_content("Tell me you're ready to perform the task")
     return response.text
 
 @app.post("/detailer")
