@@ -6,7 +6,7 @@ import google.generativeai as genai
 
 app = FastAPI()
 
-genai.configure(api_key="AIzaSyAwBPsAUfpUBXKZsK8G_8cH98sHOXDfiGs")
+genai.configure(api_key="REDACTED")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # cors 이슈
